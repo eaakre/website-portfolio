@@ -93,6 +93,11 @@ span {
     background-color: #ff4321;
 }
 
+br {
+    display: block;
+}
+
+/* Moving picture on home page */
 .img-box {
     width: 45%;
     height: 80%;
@@ -133,6 +138,7 @@ span {
     color: #ff4321;
 }
 
+/* Gallery.html */
 .img-gallery {
     width: 80%;
     margin: 25px auto 25px;
@@ -180,9 +186,7 @@ span {
     cursor: pointer;
 }
 
-
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     nav {
         width: 100%;
         background-color: #212121;
@@ -192,6 +196,7 @@ span {
     nav ul li {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .hero {
@@ -203,16 +208,68 @@ span {
         width: 60%;
     }
 
+    br {
+        display: block;
+    }
+
     .img-box {
         position: relative;
+        width: 70%;
         right: 0;
     }
 
     .img-box img {
-        left: 75%;
-        transform: translateX(-40%);
+        max-height: 50%;
+        left: 15%;
+        transform: translateX(0);
+    }
+
+    .img-box:hover .main-img {
+        left: 14%;
     }
 }
 
+@media only screen and (max-width: 600px) {
+    nav {
+        width: 100%;
+        background-color: #212121;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        width: 60%;
+    }
+
+    br {
+        display: none;
+    }
+
+    .img-box {
+        position: relative;
+        width: 70%;
+        right: 0;
+    }
+
+    .img-box img {
+        max-height: 50%;
+        left: 15%;
+        transform: translateX(0);
+    }
+
+    .img-box:hover .main-img {
+        left: 14%;
+    }
+}
 
 
