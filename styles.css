@@ -286,7 +286,7 @@ br {
   flex-direction: column;
   align-items: center;
   max-width: 600px;
-  margin: 50px auto 50px;
+  margin: 25px auto;
   padding: 5px;
   border-radius: 10px;
 }
@@ -304,4 +304,15 @@ br {
 .portfolio__description {
   margin: 10px;
   font-family: sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .portfolio__example {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+
+  .portfolio__gif {
+    max-width: 350px;
+  }
 }
