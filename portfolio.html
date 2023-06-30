@@ -5,73 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Erik Aakre | Gallery</title>
+    <title>Erik Aakre | Portfolio</title>
   </head>
-  <body class="hero">
-    <div>
-      <nav>
-        <a href="index.html"><img src="images/logo.png" class="logo" /></a>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="gallery.html">GALLERY</a></li>
-          <li><a href="portfolio.html">PORTFOLIO</a></li>
-          <li><a href="#">HIRE ME</a></li>
-        </ul>
-        <img src="images/moon.png" id="icon" />
-      </nav>
-      <div class="full-img" id="fullImgBox">
-        <img src="images/img-1.jpg" id="fullImg" />
-        <span onclick="closeFullImg()">X</span>
-      </div>
-      <div class="img-gallery">
-        <img
-          src="images/img-1.jpg"
-          id="img-1"
-          onclick="openFullImg(this.src)"
-        />
-        <img
-          src="images/img-2.jpg"
-          id="img-2"
-          onclick="openFullImg(this.src)"
-        />
-        <img
-          src="images/img-3.jpg"
-          id="img-3"
-          onclick="openFullImg(this.src)"
-        />
-        <img
-          src="images/img-4.jpg"
-          id="img-4"
-          onclick="openFullImg(this.src)"
-        />
-        <img
-          src="images/img-5.jpg"
-          id="img-5"
-          onclick="openFullImg(this.src)"
-        />
-        <img
-          src="images/img-6.jpg"
-          id="img-6"
-          onclick="openFullImg(this.src)"
-        />
-        <img
-          src="images/img-7.jpg"
-          id="img-7"
-          onclick="openFullImg(this.src)"
-        />
-        <img
-          src="images/img-8.jpg"
-          id="img-8"
-          onclick="openFullImg(this.src)"
-        />
-      </div>
+  <body class="page">
+    <nav>
+      <a href="index.html"><img src="images/logo.png" class="logo" /></a>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="#">HIRE ME</a></li>
+      </ul>
+      <img src="images/moon.png" id="icon" />
+    </nav>
 
-      <div class="social-links">
-        <a href=""><i class="fab fa-linkedin-in"></i></a>
-        <a href=""><i class="fab fa-behance"></i></a>
-        <a href=""><i class="fab fa-dribbble"></i></a>
+    <main class="content">
+      <div class="portfolio__example">
+        <h2 class="portfolio__title">Track & Field Site</h2>
+        <a href="https://eaakre.github.io/track/" target="_blank">
+          <img src="physicals.gif" class="portfolio__gif" />
+        </a>
+        <p class="portfolio__description">
+          A website I built for our Track & Field program. Using HTML, CSS, and
+          JavaScript, I built a program to compare our team roster to students
+          at our school who had physicals on file. If their name shows up after
+          generating the report, they need to turn in their physicals. This site
+          is mobile responsive.
+        </p>
       </div>
-    </div>
+      <div class="portfolio__example">
+        <h2 class="portfolio__title">Basketball Card Game</h2>
+        <a href="https://eaakre.github.io/nba-hoops/" target="_blank">
+          <img src="nba.gif" class="portfolio__gif" />
+        </a>
+        <p class="portfolio__description">
+          A website based on a card game my brothers and I played growing up. I
+          used HTML, CSS, and JavaScript in this project. This site is mobile
+          responsive.
+        </p>
+      </div>
+    </main>
 
     <script>
       let icon = document.getElementById("icon");
