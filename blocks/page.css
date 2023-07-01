@@ -1,6 +1,7 @@
 :root {
   --primary-color: #edf2fc;
   --secondary-color: #212121;
+  --header-height: 78px;
 }
 .dark-theme {
   --primary-color: #000106;
