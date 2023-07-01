@@ -1,0 +1,26 @@
+.footer {
+  background-color: #212121;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__socials {
+  margin: 25px 0 50px 80px;
+}
+
+.footer__socials-links {
+  font-size: 24px;
+  color: #606163;
+  margin-right: 20px;
+}
+
+.footer__socials-links:hover {
+  cursor: pointer;
+  color: #ff4321;
+}
+
+.footer__title {
+  margin: 25px 80px 50px 0;
+  color: #606163;
+  font-size: 14px;
+}
