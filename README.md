@@ -11,4 +11,3 @@ This is my portfolio for my creations
 ## Looking to add in the future
 
 - portfolio projects
-- email popup on Hire Me link
