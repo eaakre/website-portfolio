@@ -1,13 +1,15 @@
 # website-portfolio
 
-This is my portfolio for my creations
+This is my portfolio for my projects
 
 ## Features
 
 - Download my resume
 - See my family
 - See projects that I have completed
+- contact me via email
 
 ## Looking to add in the future
 
-- portfolio projects
+- portfolio project cards
+- light/dark mode
