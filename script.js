@@ -14,10 +14,8 @@ let lastScrollY = window.scrollY;
 window.addEventListener("scroll", () => {
   if (lastScrollY < window.scrollY) {
     header.classList.add("header--hidden");
-    console.log("we are going down");
   } else {
     header.classList.remove("header--hidden");
-    console.log("we are going up");
   }
 
   lastScrollY = window.scrollY;
