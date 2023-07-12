@@ -1,0 +1,39 @@
+.portfolio {
+  box-sizing: border-box;
+}
+
+.portfolio__example {
+  padding: 160px 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.portfolio__example:nth-child(even) {
+  background-color: #212121;
+}
+
+.portfolio__description {
+}
+
+.portfolio__display {
+  background-color: #f9f9f9;
+  max-width: 350px;
+  padding: 25px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio__title {
+}
+
+.portfolio__title:nth-child(even) {
+  color: #fff;
+}
+
+.portfolio__gif {
+  max-width: 450px;
+}
