@@ -35,7 +35,7 @@
             >
           </li>
         </ul>
-        <!-- <img src="images/moon.png" class="nav__theme" id="icon" /> -->
+        <img src="images/moon.png" class="nav__theme" id="icon" />
       </nav>
       <a href="#" class="header__menu">
         <span class="header__menu-bar"></span>
@@ -97,10 +97,14 @@
         </div>
       </section>
 
-      <!-- <section class="fullscreen" id="fullImgBox">
-        <img src="images/img-1.jpg" class="fullscreen__image" id="fullImg" />
-        <span onclick="closeFullImg()" class="fullscreen__span">X</span>
-      </section> -->
+      <section class="fullscreen" id="fullscreen-container">
+        <span onclick="closeFullImg()" class="fullscreen__close">X</span>
+        <img
+          src="images/img-1.jpg"
+          class="fullscreen__image"
+          id="fullscreen-image"
+        />
+      </section>
 
       <section class="gallery content__gallery" id="gallery">
         <img
@@ -225,41 +229,5 @@
       </div>
       <h2 class="footer__title">2023. Erik Aakre</h2>
     </footer>
-    <script>
-      let icon = document.getElementById("icon");
-
-      icon.onclick = function () {
-        document.body.classList.toggle("dark-theme");
-        if (document.body.classList.contains("dark-theme")) {
-          icon.src = "images/sun.png";
-        } else {
-          icon.src = "images/moon.png";
-        }
-      };
-
-      // gallery script
-      let icon = document.getElementById("icon");
-
-      icon.onclick = function () {
-        document.body.classList.toggle("dark-theme");
-        if (document.body.classList.contains("dark-theme")) {
-          icon.src = "images/sun.png";
-        } else {
-          icon.src = "images/moon.png";
-        }
-      };
-
-      let fullImgBox = document.getElementById("fullImgBox");
-      let fullImg = document.getElementById("fullImg");
-
-      function openFullImg(img) {
-        fullImg.src = img;
-        fullImgBox.style.display = "flex";
-      }
-
-      function closeFullImg() {
-        fullImgBox.style.display = "none";
-      }
-    </script>
   </body>
 </html>

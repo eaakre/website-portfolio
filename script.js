@@ -20,3 +20,30 @@ window.addEventListener("scroll", () => {
 
   lastScrollY = window.scrollY;
 });
+
+// Add fullscreen option to gallery
+const fullscreenImageContainer = document.getElementById(
+  "fullscreen-container"
+);
+const fullscreenImage = document.getElementById("fullscreen-image");
+
+function openFullImg(img) {
+  fullscreenImage.src = img;
+  fullscreenImageContainer.style.display = "flex";
+}
+
+function closeFullImg() {
+  fullscreenImageContainer.style.display = "none";
+}
+
+// Toggle dark/light mode
+const icon = document.getElementById("icon");
+
+icon.onclick = function () {
+  document.body.classList.toggle("dark-theme");
+  if (document.body.classList.contains("dark-theme")) {
+    icon.src = "images/sun.png";
+  } else {
+    icon.src = "images/moon.png";
+  }
+};
